@@ -5,74 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinuxDroid</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
+      body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: linear-gradient(to right, #00c6ff, #0072ff); /* New gradient background */
+    background: #f5f5f5; /* Light grey background for a cleaner look */
     color: #333;
+    text-align: center;
 }
-        h1, h2, h3, h4 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        p {
-            text-align: justify;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        img {
-            vertical-align: middle;
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #ecf0f1;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        pre {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            font-size: 16px;
-            color: #fff;
-            background-color: #3498db;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-        }
-        .button:hover {
-            background-color: #2980b9;
-        }
-        .center {
-            text-align: center;
-        }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif; /* Keep using a modern font */
+    font-weight: 700; /* Consistent font weight */
+    color: #2c3e50; /* Darker color for headings */
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #2980b9; /* Slightly brighter color */
+}
+
+h3 {
+    font-size: 2em;
+    color: #34495e; /* A softer color */
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #7f8c8d; /* Lighter gray */
+}
+
+p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffffff; /* White background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-2px); /* Hover effect for list items */
+}
+
+pre {
+    background: #ecf0f1; /* Light grey for code blocks */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 25px; /* Rounded buttons */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.center {
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* More opaque for better visibility */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.5em; }
+    .button { font-size: 14px; padding: 8px 20px; }
+}
+
     </style>
 </head>
 <body>
